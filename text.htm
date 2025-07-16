@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .testimonials {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-wrapper {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .testimonial-scroll {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+        }
+
+        .testimonial-card {
+            flex: 0 0 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #222;
+            font-size: 1rem;
+        }
+
+        .testimonial-author span {
+            display: block;
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #007acc;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .arrow.left {
+            left: -20px;
+        }
+
+        .arrow.right {
+            right: -20px;
+        }
+
+        .arrow:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="testimonials" id="testemunhos">
+        <h2 class="section-title">O que dizem sobre mim</h2>
+
+        <div class="testimonial-wrapper">
+            <button class="arrow left" id="arrowLeft">←</button>
+
+            <div class="testimonial-scroll" id="testimonialScroll">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Trabalhar com o Afonso foi excelente! Comunicação clara e entrega
+                        rápida."</p>
+                    <h4 class="testimonial-author">João Silva<br><span>Designer</span></h4>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Profissional dedicado. Meu site ficou como eu queria."</p>
+                    <h4 class="testimonial-author">Carla Mendes<br><span>Cliente Freelancer</span></h4>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Comprometido com prazos e qualidade. Recomendo!"</p>
+                    <h4 class="testimonial-author">Lucas Ribeiro<br><span>Dev Backend</span></h4>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excelente comunicação e resultado impecável."</p>
+                    <h4 class="testimonial-author">Ana Souza<br><span>Empresária</span></h4>
+                </div>
+            </div>
+
+            <button class="arrow right" id="arrowRight">→</button>
+        </div>
+    </section>
+
+
+
+    <script>
+        const scrollContainer = document.getElementById("testimonialScroll");
+        const btnLeft = document.getElementById("arrowLeft");
+        const btnRight = document.getElementById("arrowRight");
+
+        btnLeft.addEventListener("click", () => {
+            scrollContainer.scrollBy({
+                left: -320,
+                behavior: "smooth"
+            });
+        });
+
+        btnRight.addEventListener("click", () => {
+            scrollContainer.scrollBy({
+                left: 320,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+
+</html>

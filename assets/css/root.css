@@ -1,0 +1,46 @@
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --text-color: ;
+    --background-color: ;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --max-width: 1200px;
+    --container-padding: 20px;
+    --header-height: 60px;
+    --footer-height: 40px;  
+    --link-color: ;
+    --link-hover-color: ;
+    --button-color: ;
+    --button-hover-color: ;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-size-small: 14px;
+    --z-index: 1000;
+    --gap: 20px;
+    --grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+    --grid-gap: 20px;
+
+
+
+    /* Color */
+    --color-html: #e34c26;
+    --color-css: #264de4;
+    --color-jscript: #f7df1e;
+    --color-jquery: #0769ad;
+    --color-react: #61dafb;
+    --color-typescript: #3178c6;
+    --color-tailwind-css: #38bdf8;
+    --color-nodejs: #68a063;
+    --color-figma: #f24e1e;
+    --color-bootstrap: #7952b3;
+    --color-php: #8892be;
+    --color-mysql: #00618a;
+    --color-github: #171515;
+    --color-visual-studio: #007ACC;
+
+}
