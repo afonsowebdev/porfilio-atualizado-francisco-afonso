@@ -88,10 +88,30 @@
         .arrow:hover {
             background: #005fa3;
         }
+
+        body.dark-mode {
+            background-color: #111111;
+            color: #f1f1f1;
+
+        }
+
+        /* Botão de troca */
+        #toggle-dark {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
+    <button id="toggle-dark">🌙 Modo Escuro</button>
+
+
     <section class="testimonials" id="testemunhos">
         <h2 class="section-title">O que dizem sobre mim</h2>
 
@@ -144,6 +164,28 @@
                 left: 320,
                 behavior: "smooth"
             });
+        });
+
+
+
+
+        const toggle = document.getElementById('toggle-dark');
+        const body = document.body;
+
+        // Verifica se já tem modo salvo no navegador
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+        }
+
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            // Salva preferência
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
         });
     </script>
 

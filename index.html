@@ -10,7 +10,7 @@
     <meta name="author" content="Francisco Afonso">
     <link rel="stylesheet" href="assets/css/imports.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon ">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <title>Francisco Afonso | Portfólio</title>
 </head>
 
@@ -18,7 +18,7 @@
     <div class="container">
         <header class="header" id="header">
             <div class="header__logo">
-                <a href="#hero" class="header__logo-link">Portifólio<span class="header__logo-span">afonso</span></a>
+                <a href="#hero" class="header__logo-link">Portifólio<span class="header__logo-span">/afonso</span></a>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
@@ -31,6 +31,10 @@
                     <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contato</a></li>
                 </ul>
             </nav>
+
+            <div class="dark">
+                <button id="toggle-dark"><i class='bx bx-moon'></i></button>
+            </div>
 
             <div class="header__github">
                 <a href="#" class="header__github-link"><i class='bx bxl-github'></i> Github</a>
@@ -265,9 +269,199 @@
             <!-- Contato -->
 
             <section class="contact" id="contact">
-                
+                <div class="contacts_conatiner">
+                    <h3>Entre em Contato</h3>
+
+                    <p>
+                        Preencha o formulário e entraremos em contato o mais breve possível.
+                    </p>
+
+                    <div class="cards_container">
+                        <a href="tel:+351916995148" target="_blank" class="contact-card phone">
+
+                            <div class="card-icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+
+                            <div class="card-infos">
+                                <p>Telefone</p>
+                                <span>
+                                    (+351) 91 699-5148
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="" target="_blank" class="contact-card location">
+
+                            <div class="card-icon">
+                                <i class='bx bx-current-location'></i>
+                            </div>
+
+                            <div class="card-infos">
+                                <p>Localização</p>
+                                <span>
+                                    Bragança, Portugal
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:afonso.webdev@gmail.com" target="_blank" class="contact-card email">
+
+                            <div class="card-icon">
+                                <i class='bx bxl-gmail'></i>
+                            </div>
+
+                            <div class="card-infos">
+                                <p>E-mail</p>
+                                <span>
+                                    afonso.webdev@gmail.com
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=" target="_blank" class="contact-card whatsapp">
+
+                            <div class="card-icon">
+                                <i class='bx bxl-whatsapp'></i>
+                            </div>
+
+                            <div class="card-infos">
+                                <p>WhatsApp</p>
+                                <span>
+                                    (+351) 91 699-5148
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <h4>
+                        Siga-nos nas redes sociais
+                    </h4>
+
+                    <div class="social-media">
+
+                        <a href="" class="icon-link twitter">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+
+                        <a href="" class="icon-link facebook">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="" class="icon-link linkedin">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+
+                        <a href="" class="icon-link instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact_form_container">
+                    <h3>Contatar</h3>
+                    <form method="post" id="contact-form">
+
+                        <div class="input-group">
+                            <label for="name">
+                                Nome
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">
+                                E-mail
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="subject">
+                                Assunto
+                            </label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="subject">
+                                Mensagem
+                            </label>
+                            <textarea name="messege" id="messege" readonly rows="5"></textarea>
+                        </div>
+
+                        <button type="submit">
+                            Enviar messagem
+                        </button>
+                    </form>
+                </div>
             </section>
         </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+
+                <!-- LOGO -->
+                <div class="footer__logo">
+                    <a href="#hero" class="header__logo-link">Portifólio<span
+                            class="header__logo-span">/afonso</span></a>
+                </div>
+
+                <!-- LINKS -->
+                <div class="footer__links">
+                    <h3 class="footer__subtitle">Links Rápidos</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#hero" class="footer__nav-link active">Início</a></li>
+                        <li class="footer__nav-item"><a href="#about" class="footer__nav-link">Sobre Mim</a></li>
+                        <li class="footer__nav-item"><a href="#projects" class="footer__nav-link">Projetos</a></li>
+                        <li class="footer__nav-item"><a href="#skills" class="footer__nav-link">Habilidades</a></li>
+                        <li class="footer__nav-item"><a href="#testimonials" class="footer__nav-link">Testemunhos</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="#certificados" class="footer__nav-link">Certificados</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="#contact" class="footer__nav-link">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- SERVIÇOS -->
+                <div class="footer__servicos">
+                    <h3 class="footer__subtitle">Serviços</h3>
+                    <ul class="servicos__list">
+                        <li class="servicos__item"><a href="#">Sites Intuitivos</a></li>
+                        <li class="servicos__item"><a href="#">Landing Pages</a></li>
+                        <li class="servicos__item"><a href="#">E-commerce</a></li>
+                        <li class="servicos__item"><a href="#">Manuteção</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACTOS -->
+                <div class="footer__contact">
+                    <h3 class="footer__subtitle">Contato</h3>
+
+                    <div class="footer__content">
+                        <a href="mailto:"><i class='bx bxl-gmail'></i> afonso.webdev@gmail.com</a>
+                        <a href="callto:916995148"><i class='bx bx-phone'></i> +351 91 699 5148 </a>
+                        <p><i class='bx bx-current-location'></i> Bragança, Portugal</p>
+                        
+
+                        <div class="footer__redes-socials">
+                            <a href="#" class="hero__social-link"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" class="hero__social-link"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="#" class="hero__social-link"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="hero__social-link"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__outros">
+                <p> &copy; 2025 - Francisco Afonso - Todos os <a href="#">termos</a> e <a href="#">privacidade</a>
+                    reservado.
+                </p>
+                <p>Construído com HTML, CSS e JavaScript</p>
+            </div>
+
+        </footer>
     </div>
 
 
