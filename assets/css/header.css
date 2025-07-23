@@ -114,4 +114,21 @@ header {
             }
         }   
     }
+
+    .header__toggle-container {
+        display: none;
+
+        .header__toggle {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+    }
 }

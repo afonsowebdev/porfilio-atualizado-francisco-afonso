@@ -20,6 +20,14 @@
     --grid-gap: 20px;
 
 
+    /* Modo Dark */
+    --dark-background-color: #121212;
+    --dark-text-color: #ffffff;
+    --dark-primary-color: #e67e22;
+    --dark-secondary-color: #ca6f1e;
+    --dark-link-color: ;
+    --dark-link-hover-color: ;
+
 
     /* Color */
     --color-html: #e34c26;

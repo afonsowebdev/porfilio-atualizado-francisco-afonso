@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    header {
+
+        .header__nav {
+            display: none;
+        }
+
+        .dark {
+            display: none;
+        }
+        
+        .header__github {
+            display: none;
+        }
+
+        .header__toggle-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+    }
+    
+}
