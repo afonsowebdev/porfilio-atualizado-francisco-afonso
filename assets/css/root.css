@@ -3,8 +3,8 @@
 
     --primary-color: #e67e22;
     --secondary-color: #ca6f1e;
-    --text-color: #000000;
-    --background-color: #ffffff;  
+    --text-color: #ffffff;
+    --background-color: #0F0F1E;  
     --span-color: #e67e22;
     --link-color: ;
     --link-hover-color: ;
@@ -42,7 +42,9 @@
     --color-bootstrap: #7952b3;
     --color-php: #8892be;
     --color-mysql: #00618a;
-    --color-github: #171515;
+    --color-github: #3c3c3c;
+    --color-gitlab: #fc6d26;
+    --color-linkedin: #0077b5;
     --color-visual-studio: #007ACC;
 
 }

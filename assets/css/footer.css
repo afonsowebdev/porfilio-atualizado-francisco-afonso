@@ -31,11 +31,11 @@
         .footer__links {
             .footer__nav-item {
                 font-size: 16px;
-                color: var(--text-color);
+                color: var(--primary-color);
                 transition: transform 0.3s ease-out;
 
                 &:hover {
-                    color: var(--primary-color);
+                    color: var(--text-color);
                     transform: scale(1.01);
                 }
 
@@ -51,11 +51,11 @@
             .servicos__list {
                 .servicos__item {
                     font-size: 16px;
-                    color: var(--text-color);
+                    color: var(--primary-color);
                     transition: transform 0.3s ease-out;
 
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--text-color);
                         transform: scale(1.01);
                     }
 
@@ -76,13 +76,13 @@
                 .gmail,
                 .phone,
                 .location {
-                    color: var(--text-color);
+                    color: var(--primary-color);
                     text-decoration: none;
                     font-size: 16px;
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: var(--primary-color);
+                        color: var(--text-color);
                     }
 
                     i {
@@ -114,17 +114,17 @@
                         }
 
                         &.github {
-                            color: var(--background-color);
+                            color: var(--text-color);
                             background-color: #333;
                         }
 
                         &.linkedin {
-                            color: var(--background-color);
+                            color: var(--text-color);
                             background-color: #0077b5;
                         }
 
                         &.instagram {
-                            color: var(--background-color);
+                            color: var(--text-color);
                             background-color: #e1306c;
                         }
                     }
