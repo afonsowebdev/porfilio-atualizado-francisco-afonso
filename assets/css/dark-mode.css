@@ -1,14 +1,248 @@
-body.dark-mode {
-    background-color: var(--dark-background-color);
-    color: var(--dark-text-color);
+/* MODO DARK */
 
-    #toggle-dark {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 1.2rem;
-        cursor: pointer;
+body.dark-mode {
+    background-color: #ffffff;
+    color: #000;
+
+    .header {
+        background-color: var(--text-color);
+
+        .header__logo {
+            .header__logo-link {
+                color: #000;
+            }
+        }
+
+        .header__nav {
+            .header__nav-link {
+                color: #000;
+            }
+        }
+
+        .dark {
+            button {
+                .bx.bx-moon {
+                    color: #000;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+
+        .header__links {
+
+            .bx.bxl-github,
+            .bx.bxl-discord-alt {
+                color: #000;
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
     }
+
+    .hero {
+        .hero__container {
+
+            .hero__title,
+            .hero__subtitle,
+            .hero__description {
+                color: #000;
+            }
+        }
+
+        .hero__image {
+            .hero__img {
+                border: 3.5px solid var(--primary-color);
+            }
+        }
+    }
+
+    .projects {
+        .projects__content {
+
+            .project__card {
+
+                .project__header {
+
+                    .project__name {
+                        color: #000;
+                    }
+
+                    .project__links {
+                        .project__link {
+                            color: #000;
+                        }
+                    }
+                }
+
+                .project__description {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .skills {
+
+        .skills__content {
+
+            .skills__list {
+
+                .skills__item {
+                    color: #000;
+                }
+
+                #html,
+                #css,
+                #javascript,
+                #jquery,
+                #react,
+                #typescript,
+                #tailwind-css,
+                #nodejs,
+                #figma,
+                #bootstrap,
+                #php,
+                #mysql,
+                #gitlab,
+                #github,
+                #visual-studio {
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials {
+
+        .testimonials__title,
+        .testimonials__description {
+            color: #000;
+        }
+
+        .testimonials__slider {
+            .testimonial {
+
+                .testimonial__text,
+                .testimonial__author {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .contacts_conatiner {
+
+            .contact_description {
+                color: #000;
+            }
+
+            .social-media-title {
+                color: #000;
+            }
+
+            .cards_container {
+
+                .contact-card {
+                    background-color: var(--text-color);
+
+                    .card-infos {
+
+                        p,
+                        span {
+                            color: #000;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .contact_form_container {
+            #contact-form {
+                .input-group {
+                    label {
+                        color: #000;
+                    }
+
+                    input,
+                    textarea {
+                        background-color: var(--text-color);
+
+                        &:focus {
+                            outline: 1px solid var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer__container {
+
+            .footer__logo {
+
+                .header__logo-link {
+                    color: #000;
+                }
+            }
+
+
+            .footer__links {
+
+                .footer__nav-item {
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+
+            .footer__servicos {
+                .servicos__list {
+                    .servicos__item {
+                        .servicos-link {
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer__contact {
+                .footer__content {
+
+                    .gmail,
+                    .phone,
+                    .location {
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__outros {
+            color: #000;
+
+            a {
+                color: var(--primary-color);
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+
 }

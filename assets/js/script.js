@@ -20,28 +20,54 @@ prevBtn.addEventListener("click", () => {
   showTestimonial(current);
 });
 
-// Optional: autoplay
-// setInterval(() => {
-//   current = (current + 1) % testimonials.length;
-//   showTestimonial(current);
-// }, 5000);
+// Modo Dark
 
-/* Modo Dark */
-const toggle = document.getElementById("toggle-dark");
-const body = document.body;
+/* // Alternar modo dark
+const toggleDark = document.getElementById("toggle-dark");
 
-// Verifica se já tem modo salvo no navegador
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-mode");
-}
+toggleDark.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
 
-toggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+  // Salvar preferência no localStorage
+  const isDark = document.body.classList.contains("dark-mode");
+  localStorage.setItem("modo-escuro", isDark);
+});
 
-  // Salva preferência
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
+// Aplicar preferência salva
+window.addEventListener("DOMContentLoaded", () => {
+  const preferencia = localStorage.getItem("modo-escuro");
+  if (preferencia === "true") {
+    document.body.classList.add("dark-mode");
+  }
+}); */
+
+const toggleDark = document.getElementById("toggle-dark");
+const icon = document.getElementById("icon-dark");
+
+toggleDark.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  const isDark = document.body.classList.contains("dark-mode");
+  localStorage.setItem("modo-escuro", isDark);
+
+  // Trocar ícone
+  if (isDark) {
+    icon.classList.remove("bx-moon");
+    icon.classList.add("bx-sun");
   } else {
-    localStorage.setItem("theme", "light");
+    icon.classList.remove("bx-sun");
+    icon.classList.add("bx-moon");
+  }
+});
+
+// Aplicar preferência salva ao carregar
+window.addEventListener("DOMContentLoaded", () => {
+  const preferencia = localStorage.getItem("modo-escuro");
+  const icon = document.getElementById("icon-dark");
+
+  if (preferencia === "true") {
+    document.body.classList.add("dark-mode");
+    icon.classList.remove("bx-moon");
+    icon.classList.add("bx-sun");
   }
 });

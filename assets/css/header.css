@@ -97,10 +97,13 @@ header {
 
     }
 
-    .header__github {
+    .header__links {
         position: relative;
+        display: flex;
+        gap: 20px;
 
-        .bx.bxl-github {
+        .bx.bxl-github,
+        .bx.bxl-discord-alt {
             font-size: 24px;
             color: var(--text-color);
             transition: color 0.3s ease;
