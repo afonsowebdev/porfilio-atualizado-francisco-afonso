@@ -52,11 +52,11 @@ toggleDark.addEventListener("click", () => {
 
   // Trocar ícone
   if (isDark) {
-    icon.classList.remove("bx-moon");
-    icon.classList.add("bx-sun");
-  } else {
     icon.classList.remove("bx-sun");
     icon.classList.add("bx-moon");
+  } else {
+    icon.classList.remove("bx-moon");
+    icon.classList.add("bx-sun");
   }
 });
 
@@ -67,7 +67,74 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (preferencia === "true") {
     document.body.classList.add("dark-mode");
-    icon.classList.remove("bx-moon");
-    icon.classList.add("bx-sun");
+    icon.classList.remove("bx-sun");
+    icon.classList.add("bx-moon");
+  }
+});
+
+// Animation
+// Detectar elementos visíveis ao rolar
+const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        // Apenas uma vez: parar de observar depois
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+// Observar todos os elementos com a classe
+animatedElements.forEach((el) => observer.observe(el));
+
+/* // Scroll suave personalizado
+const linksInternos = document.querySelectorAll('a[href^="#"]');
+
+linksInternos.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+
+    if (href.length > 1) {
+      // Ignora href="#"
+      const destino = document.querySelector(href);
+      if (!destino) return;
+
+      destino.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+ */
+
+// ====== Scroll para o topo ======
+const scrollToTopBtn = document.getElementById("scroll-up");
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  document.querySelectorAll(".menu-item.active").forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  document.querySelectorAll(".nav-link.active").forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  // Remover hash da URL
+  if (history.pushState) {
+    history.pushState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search
+    );
   }
 });

@@ -33,11 +33,12 @@
             </nav>
 
             <div class="dark">
-                <button id="toggle-dark"><i class='bx bx-moon'></i></button>
+                <button id="toggle-dark"><i class='bx bx-sun' id="icon-dark"></i></button>
             </div>
 
             <div class="header__links">
-                <a href="https://github.com/afonsowebdev" target="_blank" class="header__github-link"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/afonsowebdev" target="_blank" class="header__github-link"><i
+                        class='bx bxl-github'></i></a>
                 <a href="" target="_blank" class="header__discord-link"><i class='bx bxl-discord-alt'></i></a>
             </div>
 
@@ -50,7 +51,7 @@
 
         <main>
             <div class="hero" id="hero">
-                <div class="hero__container">
+                <div class="hero__container animate-on-scroll">
                     <h1 class="hero__title">Francisco <span class="hero__span">Afonso</span></h1>
                     <p class="hero__subtitle">Desenvolvedor Web <span class="hero__span">Front-End</span> & <span
                             class="hero__span">UI/UX</span></p>
@@ -72,15 +73,15 @@
                     </div>
                 </div>
 
-                <div class="hero__image">
+                <div class="hero__image animate-on-scroll">
                     <img src="assets/images/foto de perfil.png" alt="Imagem de Francisco Afonso" class="hero__img">
                 </div>
             </div>
 
-            <section class="about" id="about">
+            <section class="about animate-on-scroll" id="about">
                 <h2 class="about__title">Sobre <span class=".about__span-color">Mim</span></h2>
 
-                <div class="about__container">
+                <div class="about__container ">
                     <div class="about__image">
                         <img src="assets/images/about__image.jpg" alt="Imagem de Francisco Afonso" class="about__img">
                     </div>
@@ -118,7 +119,7 @@
             </section>
 
             <!-- Projetos -->
-            <section class="projects" id="projects">
+            <section class="projects animate-on-scroll" id="projects">
                 <h2 class="projects__title">Meus <span class="projects__span-color">Projetos</span></h2>
                 <p class="projects__subtitle">Confira alguns dos meus projetos mais recentes.</p>
 
@@ -209,7 +210,7 @@
             </section>
 
             <!-- SKILLS -->
-            <section class="skills" id="skills">
+            <section class="skills animate-on-scroll" id="skills">
                 <h2 class="skills__title">Minhas <span class="skills__span">Habilidades</span></h2>
                 <p class="skills__description">
                     Trabalho com variedade de tecnológia e ferramentas para criar interfaces modernas, simples e
@@ -243,7 +244,7 @@
 
             <!-- Depoimento -->
 
-            <section class="testimonials" id="testimonials">
+            <section class="testimonials animate-on-scroll" id="testimonials">
 
                 <h2 class="testimonials__title">Testemunhos <span class="testimonials__span">sobre mim</span></h2>
                 <p class="testimonials__description">Veja o que meus clientes e colegas dizem sobre meu trabalho.</p>
@@ -280,7 +281,7 @@
 
             <!-- Cerificados -->
 
-            <section class="certificados" id="certificados">
+            <section class="certificados animate-on-scroll" id="certificados">
                 <h2 class="cetificados_title">Meus <span class="geral-span">Certificados</span></h2>
                 <p class="cetificados_description">Cursos concluídos para reforçar minha formação em tecnologia.</p>
 
@@ -327,7 +328,7 @@
 
             <!-- Contato -->
 
-            <section class="contact" id="contact">
+            <section class="contact animate-on-scroll" id="contact">
                 <div class="contacts_conatiner">
                     <h3 class="contact-subtitle">Entre em <span class="geral-span">Contato</span></h3>
 
@@ -520,12 +521,19 @@
                 </p>
             </div>
 
+            <div class="scroll-up" id="scroll-up">
+                <a href="#header"><i class='bx bxs-chevron-up'></i></a>
+            </div>
+
         </footer>
     </div>
 
 
+
     <script src="assets/js/script.js"></script>
 </body>
+
+
 
 
 
