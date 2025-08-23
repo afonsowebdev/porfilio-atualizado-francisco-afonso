@@ -1,0 +1,4 @@
+
+ <li class="skills__item" id="gitlab"> <i class='bx bxl-gitlab'></i> GitLab</li>
+                            <li class="skills__item" id="github"> <i class='bx bxl-github'></i> Github</li>
+                            <li class="skills__item" id="visual-studio"> <i class='bx bxl-visual-studio'></i> Visual Studio</li>

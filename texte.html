@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Texto Digitando e Apagando</title>
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #0f0;
+            /* cursor */
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                border-color: #0f0;
+            }
+
+            51%,
+            100% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="type"></h1>
+
+    <script>
+        const el = document.getElementById("type");
+        const text = "Web Development Full Stack & UI/UX";
+        const typingSpeed = 80;   // ms por letra digitada
+        const deletingSpeed = 60; // ms por letra apagada
+        const pauseEnd = 1200;    // pausa quando termina de digitar
+        const pauseStart = 400;   // pausa antes de começar a digitar novamente
+
+        let i = 0;
+        let deleting = false;
+
+        function typeLoop() {
+            if (!deleting && i <= text.length) {
+                el.textContent = text.substring(0, i);
+                i++;
+                if (i > text.length) {
+                    deleting = true;
+                    setTimeout(typeLoop, pauseEnd);
+                    return;
+                }
+                setTimeout(typeLoop, typingSpeed);
+            } else if (deleting && i >= 0) {
+                el.textContent = text.substring(0, i);
+                i--;
+                if (i < 0) {
+                    deleting = false;
+                    setTimeout(typeLoop, pauseStart);
+                    return;
+                }
+                setTimeout(typeLoop, deletingSpeed);
+            }
+        }
+
+        typeLoop();
+    </script>
+</body>
+
+</html>

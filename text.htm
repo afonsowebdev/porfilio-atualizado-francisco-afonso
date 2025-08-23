@@ -1,194 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Portfólio</title>
     <style>
-        .testimonials {
-            padding: 60px 20px;
-            background-color: #f4f4f4;
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            margin: 0;
+            padding: 20px;
             text-align: center;
         }
 
-        .section-title {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 40px;
-        }
-
-        .testimonial-wrapper {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .testimonial-scroll {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            padding-bottom: 10px;
-        }
-
-        .testimonial-card {
-            flex: 0 0 300px;
-            background: white;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            color: #555;
-            font-size: 1rem;
-            margin-bottom: 16px;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-            color: #222;
-            font-size: 1rem;
-        }
-
-        .testimonial-author span {
-            display: block;
-            font-weight: normal;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #007acc;
+        button {
+            background: #2563eb;
             color: white;
             border: none;
-            font-size: 1.5rem;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            padding: 10px 20px;
+            border-radius: 8px;
             cursor: pointer;
-            z-index: 1;
+            font-weight: bold;
+            margin-top: 20px;
         }
 
-        .arrow.left {
-            left: -20px;
-        }
-
-        .arrow.right {
-            right: -20px;
-        }
-
-        .arrow:hover {
-            background: #005fa3;
-        }
-
-        body.dark-mode {
-            background-color: #111111;
-            color: #f1f1f1;
-
-        }
-
-        /* Botão de troca */
-        #toggle-dark {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
+        button:hover {
+            background: #1d4ed8;
         }
     </style>
 </head>
 
 <body>
-    <button id="toggle-dark">🌙 Modo Escuro</button>
-
-
-    <section class="testimonials" id="testemunhos">
-        <h2 class="section-title">O que dizem sobre mim</h2>
-
-        <div class="testimonial-wrapper">
-            <button class="arrow left" id="arrowLeft">←</button>
-
-            <div class="testimonial-scroll" id="testimonialScroll">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Trabalhar com o Afonso foi excelente! Comunicação clara e entrega
-                        rápida."</p>
-                    <h4 class="testimonial-author">João Silva<br><span>Designer</span></h4>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Profissional dedicado. Meu site ficou como eu queria."</p>
-                    <h4 class="testimonial-author">Carla Mendes<br><span>Cliente Freelancer</span></h4>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Comprometido com prazos e qualidade. Recomendo!"</p>
-                    <h4 class="testimonial-author">Lucas Ribeiro<br><span>Dev Backend</span></h4>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Excelente comunicação e resultado impecável."</p>
-                    <h4 class="testimonial-author">Ana Souza<br><span>Empresária</span></h4>
-                </div>
-            </div>
-
-            <button class="arrow right" id="arrowRight">→</button>
-        </div>
-    </section>
-
-
+    <h1 id="title"></h1>
+    <p id="about"></p>
+    <h2 id="skillsTitle"></h2>
+    <ul>
+        <li id="skill1"></li>
+        <li id="skill2"></li>
+        <li id="skill3"></li>
+    </ul>
+    <button id="langBtn">English</button>
 
     <script>
-        const scrollContainer = document.getElementById("testimonialScroll");
-        const btnLeft = document.getElementById("arrowLeft");
-        const btnRight = document.getElementById("arrowRight");
+        // Dicionário de traduções
+        const translations = {
+            pt: {
+                title: "Bem-vindo ao meu portfólio",
+                about: "Sou desenvolvedor web apaixonado por criar experiências digitais incríveis.",
+                skillsTitle: "Minhas Habilidades",
+                skill1: "HTML, CSS e JavaScript",
+                skill2: "React e Vue.js",
+                skill3: "Node.js e Banco de Dados",
+                button: "English"
+            },
+            en: {
+                title: "Welcome to my portfolio",
+                about: "I am a web developer passionate about creating amazing digital experiences.",
+                skillsTitle: "My Skills",
+                skill1: "HTML, CSS and JavaScript",
+                skill2: "React and Vue.js",
+                skill3: "Node.js and Databases",
+                button: "Português"
+            }
+        };
 
-        btnLeft.addEventListener("click", () => {
-            scrollContainer.scrollBy({
-                left: -320,
-                behavior: "smooth"
-            });
-        });
+        let currentLang = "pt"; // começa em português
 
-        btnRight.addEventListener("click", () => {
-            scrollContainer.scrollBy({
-                left: 320,
-                behavior: "smooth"
-            });
-        });
-
-
-
-
-        const toggle = document.getElementById('toggle-dark');
-        const body = document.body;
-
-        // Verifica se já tem modo salvo no navegador
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
+        // Função que troca os textos
+        function updateTexts() {
+            const t = translations[currentLang];
+            document.getElementById("title").textContent = t.title;
+            document.getElementById("about").textContent = t.about;
+            document.getElementById("skillsTitle").textContent = t.skillsTitle;
+            document.getElementById("skill1").textContent = t.skill1;
+            document.getElementById("skill2").textContent = t.skill2;
+            document.getElementById("skill3").textContent = t.skill3;
+            document.getElementById("langBtn").textContent = t.button;
         }
 
-        toggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-
-            // Salva preferência
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
+        // Botão de troca de idioma
+        document.getElementById("langBtn").addEventListener("click", () => {
+            currentLang = currentLang === "pt" ? "en" : "pt";
+            updateTexts();
         });
-    </script>
 
+        // Inicializa em português
+        updateTexts();
+    </script>
 </body>
 
 </html>

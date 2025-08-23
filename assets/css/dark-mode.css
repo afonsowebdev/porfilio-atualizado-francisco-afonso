@@ -35,7 +35,7 @@ body.dark-mode {
         .header__links {
 
             .bx.bxl-github,
-            .bx.bxl-discord-alt {
+            .bx.bxl-linkedin-square {
                 color: #000;
 
                 &:hover {
@@ -66,6 +66,7 @@ body.dark-mode {
         .projects__content {
 
             .project__card {
+                box-shadow: none;
 
                 .project__header {
 
@@ -90,6 +91,10 @@ body.dark-mode {
     .skills {
 
         .skills__content {
+
+            .skills-subtitle {
+                color: #000;
+            }
 
             .skills__list {
 
