@@ -81,20 +81,26 @@ header {
             &:hover {
                 color: var(--span-color);
             }
-
-            /* .bx.bx-moon {
-                font-size: 18px;
-                color: var(--text-color);
-                transition: color 0.3s ease;
-
-                &:hover {
-                    color: var(--primary-color);
-                    transform: scale(1.1);
-                }
-            } */
         }
+    }
 
+    .header__language {
+        button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s ease;
 
+            &:hover {
+                color: var(--span-color);
+            }
+        }
     }
 
     .header__links {

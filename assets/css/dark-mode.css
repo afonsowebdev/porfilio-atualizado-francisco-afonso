@@ -32,6 +32,16 @@ body.dark-mode {
             }
         }
 
+        .header__language {
+            button {
+                color: #000;
+
+                &:hover {
+                    color: var(--span-color);
+                }
+            }
+        }
+
         .header__links {
 
             .bx.bxl-github,

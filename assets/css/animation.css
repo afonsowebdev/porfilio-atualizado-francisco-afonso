@@ -53,3 +53,17 @@
         transform: translateX(100%);
     }
 }
+
+/*  */
+@keyframes blink {
+
+    0%,
+    50% {
+        border-color: var(--primary-color);
+    }
+
+    51%,
+    100% {
+        border-color: transparent;
+    }
+}
