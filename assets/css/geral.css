@@ -9,8 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-    /* altura da navbar */
+    scroll-padding-top: 40px;
 }
 
 body {
@@ -20,7 +19,6 @@ body {
 
 a {
     text-decoration: none;
-    color: var();
 }
 
 img {
@@ -49,6 +47,9 @@ ul {
     list-style: none;
 }
 
+
+
+span.subtitle__span,
 span {
     color: var(--span-color);
 }
@@ -68,11 +69,13 @@ strong {
     margin: 0 auto;
 }
 
-section {
-    padding: 60px 0;
+section,
+.hero {
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .underline {
@@ -84,15 +87,8 @@ section {
     border-radius: 999px;
 }
 
-.hero,
-.about,
-.projects,
-.testimonials,
-.certificados,
-.contact {
-    min-height: 100vh;
-    /* ocupa no mínimo a tela inteira */
-    padding-top: 80px;
-    /* altura da navbar fixa */
-    box-sizing: border-box;
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
