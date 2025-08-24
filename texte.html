@@ -38,11 +38,45 @@
                 border-color: transparent;
             }
         }
+
+        :root {
+            --accent: #ff4b2b;
+            /* troca pela cor do teu site */
+        }
+
+        .subtitle {
+            text-align: center;
+            /* centraliza o texto */
+            position: relative;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .subtitle::after {
+            content: "";
+            display: block;
+            width: 72px;
+            /* largura da linha */
+            height: 3px;
+            /* espessura */
+            background: var(--accent);
+            border-radius: 999px;
+            margin: .5rem auto 0;
+            /* centraliza a linha */
+        }
     </style>
 </head>
 
 <body>
     <h1 id="type"></h1>
+    <br>
+
+    <h2 class="subtitle">Projetos</h2>
+    <br>
+    <h2 class="subtitle">Competências</h2>
+    <br>
+    <h2 class="subtitle">Contato</h2>
+
+
 
     <script>
         const el = document.getElementById("type");

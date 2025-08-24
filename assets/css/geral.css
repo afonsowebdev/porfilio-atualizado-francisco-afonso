@@ -9,6 +9,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* altura da navbar */
 }
 
 body {
@@ -51,6 +53,15 @@ span {
     color: var(--span-color);
 }
 
+span.geral-span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 600;
+}
+
 .container {
     width: 90%;
     max-width: 1300px;
@@ -62,5 +73,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.underline {
+    width: 60px;
+    border: 0;
+    height: 3px;
+    background: var(--primary-color);
+    margin: .5rem auto 1.5rem;
+    border-radius: 999px;
+}
+
+.hero,
+.about,
+.projects,
+.testimonials,
+.certificados,
+.contact {
+    min-height: 100vh;
+    /* ocupa no mínimo a tela inteira */
+    padding-top: 80px;
+    /* altura da navbar fixa */
+    box-sizing: border-box;
 }

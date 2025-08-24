@@ -27,7 +27,6 @@ header {
                 color: var(--span-color);
                 font-weight: 500;
                 font-size: small;
-
             }
         }
     }
@@ -88,6 +87,7 @@ header {
         button {
             display: flex;
             align-items: center;
+            
             gap: 5px;
             
             background: none;
