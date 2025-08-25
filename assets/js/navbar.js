@@ -2,10 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".header__nav-item");
   const navLinks = document.querySelectorAll(".header__nav-link");
 
-  // Aqui selecionamos todas as seções e a #hero (mesmo sendo div)
   const sections = Array.from(document.querySelectorAll("section[id]"));
   const hero = document.getElementById("hero");
-  if (hero) sections.unshift(hero); // coloca hero no início
+  if (hero) sections.unshift(hero);
 
   function setActive(item) {
     navItems.forEach((i) => i.classList.remove("active"));

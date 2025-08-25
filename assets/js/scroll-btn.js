@@ -10,7 +10,6 @@ scrollToTopBtn.addEventListener("click", () => {
     link.classList.remove("active");
   });
 
-  // Remover hash da URL
   if (history.pushState) {
     history.pushState(
       "",

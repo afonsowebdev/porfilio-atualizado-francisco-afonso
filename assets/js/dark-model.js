@@ -1,5 +1,3 @@
-// Modo Dark
-
 const toggleDark = document.getElementById("toggle-dark");
 const icon = document.getElementById("icon-dark");
 

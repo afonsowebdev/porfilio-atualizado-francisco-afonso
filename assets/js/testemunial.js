@@ -16,7 +16,7 @@ function startAutoSlide() {
   autoInterval = setInterval(() => {
     current = (current + 1) % testimonials.length;
     showTestimonial(current);
-  }, 5000);
+  }, 6000);
 }
 
 // Para o slide automático (caso queira reiniciar ao clicar)
@@ -42,3 +42,28 @@ prevBtn.addEventListener("click", () => {
 // Inicializa
 showTestimonial(current);
 startAutoSlide();
+
+
+/* const testimonials = document.querySelectorAll(".testimonial");
+let current = 0;
+let autoInterval = null;
+
+function showTestimonial(index) {
+  testimonials.forEach((testimonial, i) => {
+    testimonial.classList.remove("active");
+    if (i === index) testimonial.classList.add("active");
+  });
+}
+
+// Avança automaticamente a cada 6 segundos
+function startAutoSlide() {
+  autoInterval = setInterval(() => {
+    current = (current + 1) % testimonials.length;
+    showTestimonial(current);
+  }, 6000);
+}
+
+// Inicializa
+showTestimonial(current);
+startAutoSlide();
+ */
