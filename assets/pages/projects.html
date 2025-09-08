@@ -10,6 +10,7 @@
     <meta name="author" content="Francisco Afonso">
     <link rel="stylesheet" href="/assets/css/imports.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <title>Francisco Afonso | Portfólio</title>
 </head>
@@ -20,10 +21,10 @@
             <div class="header__logo">
                 <a href="#hero" class="header__logo-link">Portfólio<span class="header__logo-span">/afonso</span></a>
             </div>
-            <nav class="header__nav">
+            <nav class="header__nav" id="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#hero" class="header__nav-link active">Início</a></li>
-                    <li class="header__nav-item"><a href="#about" class="header__nav-link">Sobre Mim</a></li>
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">Sobre</a></li>
                     <li class="header__nav-item"><a href="#projects" class="header__nav-link">Projetos</a></li>
                     <li class="header__nav-item"><a href="#skills" class="header__nav-link">Habilidades</a></li>
                     <li class="header__nav-item"><a href="#testimonials" class="header__nav-link">Testemunhos</a></li>
@@ -34,10 +35,6 @@
 
             <div class="dark">
                 <button id="toggle-dark"><i class='bx bx-sun' id="icon-dark"></i></button>
-            </div>
-
-            <div class="header__language">
-                <button id="language"> <i class='bx bx-globe'></i> EN</button>
             </div>
 
             <div class="header__links">
@@ -55,10 +52,111 @@
             </div>
         </header>
 
+
+        <main>
+            <!-- Projetos -->
+            <section class="projects animate-on-scroll" id="projects">
+                <h2 class="projects__title">Meus <span class="subtitle__span">Projetos</span></h2>
+                <hr class="underline">
+
+                <p class="projects__subtitle">Confira alguns dos meus projetos mais recentes.</p>
+
+                <div class="projects__content">
+
+                    <!-- Projeto 1 -->
+                    <div class="project__card">
+                        <img src="assets/images/project1.png" alt="Projeto 1" class="project__image">
+
+                        <div class="project__header">
+                            <h3 class="project__name">Café Bar</h3>
+                            <div class="project__links">
+                                <a href="https://afonsowebdev.github.io/cafe-Bar/" class="project__link"
+                                    target="_blank"><i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/afonsowebdev/cafe-Bar" class="project__link"
+                                    target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+
+                        <p class="project__description">
+                            Landing page para cafeteria com foco em conversão de clientes.
+                        </p>
+
+                        <div class="project__techs">
+                            <span class="project__tech">HTML 5</span>
+                            <span class="project__tech">CSS 3</span>
+                            <span class="project__tech">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+
+                    <div class="project__card">
+                        <img src="assets/images/project2.png" alt="Projeto 1" class="project__image">
+
+                        <div class="project__header">
+                            <h3 class="project__name">Hotel Ilustre</h3>
+                            <div class="project__links">
+                                <a href="" class="project__link" target="_blank"><i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/afonsowebdev/ilustre-hotel" class="project__link"
+                                    target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+
+                        <p class="project__description">
+                            Site institucional de hotel com galeria e formulário de reserva.
+                        </p>
+
+                        <div class="project__techs">
+                            <span class="project__tech">HTML 5</span>
+                            <span class="project__tech">CSS 3</span>
+                            <span class="project__tech">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project__card">
+                        <img src="assets/images/project3.png" alt="Projeto 1" class="project__image">
+
+                        <div class="project__header">
+                            <h3 class="project__name">Spark Agency</h3>
+                            <div class="project__links">
+                                <a href="https://afonsowebdev.github.io/contact-page/" class="project__link"
+                                    target="_blank"><i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/afonsowebdev/contact-page" class="project__link"
+                                    target="_blank"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+
+                        <p class="project__description">
+                            Página de contato responsiva com layout limpo, foco em usabilidade e fácil envio de
+                            mensagens.
+                        </p>
+
+                        <div class="project__techs">
+                            <span class="project__tech">HTML 5</span>
+                            <span class="project__tech">CSS 3</span>
+                            <span class="project__tech">JavaScript</span>
+                        </div>
+                    </div>
+                    <!-- Adicione mais cards conforme necessário -->
+                </div>
+
+                <a href="assets/pages/projects.html" class="projects-btn" target="_self"> Ver mais projetos </a>
+            </section>
+        </main>
+
     </div>
 
 
-    <script src="/assets/js/script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/testemunial.js"></script>
+    <script src="assets/js/dark-model.js"></script>
+    <script src="assets/js/animation-scroll.js"></script>
+    <script src="assets/js/scroll-btn.js"></script>
+    <script src="assets/js/text-writing.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/menu-toggle.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 
 </html>
