@@ -45,7 +45,7 @@ body.dark-mode {
         .header__links {
 
             .bx.bxl-github,
-            .bx.bxl-linkedin-square {
+            .bx.bxl-linkedin {
                 color: #000;
 
                 &:hover {

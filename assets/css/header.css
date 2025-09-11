@@ -2,18 +2,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     padding: 30px 20px;
     background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: none;
+    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); */
 
     z-index: 1000;
 
     position: fixed;
     width: 90%;
     left: 50%;
-    top: 10px;
+    top: 0px;
     backdrop-filter: blur(10px);
     transform: translateX(-50%);
 
@@ -118,7 +118,7 @@ header {
         display: flex;
         gap: 5px;
 
-        .bx.bxl-linkedin-square,
+        .bx.bxl-linkedin,
         .bx.bxl-github {
             font-size: 24px;
             color: #fff;
