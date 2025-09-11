@@ -9,7 +9,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 60px;
+    
 }
 
 body {
@@ -69,11 +70,13 @@ strong {
 
 section,
 .hero {
-    padding: 60px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
+    /* background-color: red; */
 }
 
 .underline {
