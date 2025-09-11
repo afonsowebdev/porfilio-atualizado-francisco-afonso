@@ -701,12 +701,14 @@ body {
                 font-weight: 700;
                 color: var();
                 margin-bottom: 10px 0;
+                text-align: center;
             }
 
             .certificados_description {
                 font-size: 1rem;
                 color: var();
                 margin-bottom: 20px;
+                text-align: center;
             }
 
             .certificado_content {
@@ -759,8 +761,9 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 20px;
-                padding: 10px 30px;
+                width: 150px;
+                margin: 30px auto 0 auto;
+                padding: 10px 20px;
                 border-radius: 5px;
                 color: var(--text-color);
                 background-color: var(--primary-color);

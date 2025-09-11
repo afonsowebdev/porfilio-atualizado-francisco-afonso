@@ -10,7 +10,7 @@ header {
     z-index: 1000;
 
     position: fixed;
-    width: 100%;
+    width: 90%;
     left: 50%;
     top: 0px;
     backdrop-filter: blur(10px);

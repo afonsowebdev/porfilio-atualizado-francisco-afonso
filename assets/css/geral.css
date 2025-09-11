@@ -10,7 +10,6 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
-    
 }
 
 body {
@@ -68,7 +67,10 @@ strong {
     margin: 0 auto;
 }
 
-section,
+section {
+    padding: 80px 0;
+}
+
 .hero {
     padding: 40px 0;
     display: flex;
@@ -76,7 +78,6 @@ section,
     align-items: center;
     height: 100vh;
     text-align: center;
-    /* background-color: red; */
 }
 
 .underline {
