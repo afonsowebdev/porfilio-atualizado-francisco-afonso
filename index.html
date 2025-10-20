@@ -10,7 +10,7 @@
     <meta name="author" content="Francisco Afonso">
     <link rel="stylesheet" href="assets/css/imports.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <title>Francisco Afonso | Portfólio</title>
 </head>
@@ -18,9 +18,12 @@
 <body>
     <div class="container">
         <header class="header" id="header">
+            <!-- Logotipo -->
             <div class="header__logo">
                 <a href="#hero" class="header__logo-link">Portfólio<span class="header__logo-span">/afonso</span></a>
             </div>
+
+            <!-- Navegadores -->
             <nav class="header__nav" id="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#hero" class="header__nav-link active">Início</a></li>
@@ -33,16 +36,21 @@
                 </ul>
             </nav>
 
+            <!-- Modo Claro e Escuro -->
             <div class="dark">
                 <button id="toggle-dark"><i class='bx bx-sun' id="icon-dark"></i></button>
             </div>
 
+            <!-- Links de Redes Sociais -->
             <div class="header__links">
                 <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank"
-                    class="header__linkedin-link"><i class='bx bxl-linkedin'></i></a>
+                    class="header__linkedin-link"><i class='bx bxl-linkedin linkedin'></i></a>
 
                 <a href="https://github.com/afonsowebdev" target="_blank" class="header__github-link"><i
-                        class='bx bxl-github'></i></a>
+                        class='bx bxl-github github'></i></a>
+
+                <a href="https://www.instagram.com/fafonso_oficial?igsh=bTA4NzEyZmRuMjll&utm_source=qr" target="_blank"
+                    class="header__instagram-link"><i class='bx bxl-instagram instagram'></i></a>
             </div>
 
             <div class="header__toggle-container">
@@ -54,24 +62,34 @@
 
         <main>
             <div class="hero" id="hero">
+
                 <div class="hero__container animate-on-scroll">
+                    <!-- Descrição pessoal -->
+                     <p>Olá, eu sou </p>
                     <h1 class="hero__title">Francisco <span class="subtitle__span">Afonso</span></h1>
                     <p class="hero__subtitle" id="hero__subtitle"></p>
                     <p class="hero__description">Focado na criação de interfaces eficientes e responsivas, aplicando as
                         melhores práticas de desenvolvimento para proporcionar experiências intuitivas e de alto
                         desempenho.</p>
 
+                    <!-- Botões de contato -->
                     <div class="hero__buttons">
                         <a href="#contact" class="hero__button">Entre em Contato</a>
                         <a href="#projects" class="hero__button hero__button--secondary">Veja Meus Projetos</a>
                     </div>
 
+                    <!-- Redes Sociais HERO -->
                     <div class="hero__socials">
-                        <a href="https://github.com/afonsowebdev" target="_blank" class="hero__social-link github"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank"
-                            class="hero__social-link linkedin"><i class='bx bxl-linkedin '></i></a>
-                        <a href="#" class="hero__social-link instagram"><i class='bx bxl-instagram '></i></a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" class="hero__social-link linkedin"><i class='bx bxl-linkedin '></i></a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/afonsowebdev" target="_blank" class="hero__social-link github"><i class='bx bxl-github'></i></a>
+
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/fafonso_oficial?igsh=bTA4NzEyZmRuMjll&utm_source=qr" class="hero__social-link instagram" target="_blank"><i class='bx bxl-instagram '></i></a>
                     </div>
                 </div>
 
@@ -123,7 +141,8 @@
                             <a href="#contact" class="about__button">Entre em
                                 Contato</a>
                             <a href="assets/pdf/curriculo-Francisco-Inglês.pdf"
-                                class="about__button about__button--secondary" id="btnDownload" download="">Baixar Curriculo</a>
+                                class="about__button about__button--secondary" id="btnDownload" download="">Baixar
+                                Curriculo</a>
                         </div>
                     </div>
                 </div>

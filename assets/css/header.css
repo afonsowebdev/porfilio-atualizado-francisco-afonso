@@ -5,7 +5,7 @@ header {
     padding: 30px 20px;
     background-color: var(--background-color);
     border-radius: none;
-    
+
 
     z-index: 1000;
 
@@ -92,7 +92,7 @@ header {
         }
     }
 
-    .header__language {
+    /*     .header__language {
         button {
             display: flex;
             align-items: center;
@@ -110,21 +110,42 @@ header {
                 color: var(--span-color);
             }
         }
-    }
+    } */
 
     .header__links {
         position: relative;
         display: flex;
         gap: 5px;
 
-        .bx.bxl-linkedin,
-        .bx.bxl-github {
-            font-size: 24px;
-            color: #fff;
-            transition: color 0.3s ease;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            &:hover {
-                color: var(--primary-color);
+            i {
+                color: #fff;
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+                padding: 8px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .linkedin {
+                background-color: #0A66C2;
+            }
+
+            .github {
+                background-color: #333;
+            }
+
+            .instagram {
+                background-color: #E1306C;
             }
         }
     }

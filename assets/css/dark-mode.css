@@ -45,12 +45,9 @@ body.dark-mode {
         .header__links {
 
             .bx.bxl-github,
-            .bx.bxl-linkedin {
-                color: #000;
-
-                &:hover {
-                    color: var(--primary-color);
-                }
+            .bx.bxl-linkedin,
+            .bx.bxl-instagram {
+                color: #fff;
             }
         }
     }
