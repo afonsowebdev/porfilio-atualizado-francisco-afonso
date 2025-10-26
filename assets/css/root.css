@@ -4,6 +4,7 @@
     --primary-color: #e67e22;
     --secondary-color: #ca6f1e;
     --text-color: #ffffff;
+    --text-color-dark: #000000;
     --background-color: #0F0F1E;
     --span-color: #e67e22;
     --link-color: #000000;
@@ -47,4 +48,7 @@
     --color-linkedin: #0077b5;
     --color-visual-studio: #007ACC;
 
+
+    --color-validate: #28a745;
+    --color-error: #dc3545;
 }

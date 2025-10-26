@@ -26,8 +26,8 @@ addEventListener('DOMContentLoaded', () => {
             alert('Por favor, preencha todos os campos do formulário para que o processo de envio seja concluído com sucesso.');
             return;
         } else {
-            formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado por entrar em contato.';
-            formMessage.style = 'color: green; margin-top: 10px; font-weight: 600; align-items: center;';
+            formMessage.textContent = 'Mensagem Enviada! Entrarei em contato em breve.';
+            formMessage.style = 'color: green; margin: 10px; font-weight: 400; align-items: center;';
             contactForm.reset();
         }
     })
