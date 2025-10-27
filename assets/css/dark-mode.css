@@ -64,7 +64,7 @@ body.dark-mode {
 
         .hero__image {
             .hero__img {
-                border: 3.5px solid var(--primary-color);
+                border: none;
             }
         }
     }
