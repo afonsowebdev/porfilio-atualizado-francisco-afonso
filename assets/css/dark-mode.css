@@ -210,7 +210,7 @@ body.dark-mode {
 }
 
 .footer {
-    .footer__container {
+    /* footer__container {
 
         .footer__logo {
             .header__logo-link {
@@ -234,7 +234,7 @@ body.dark-mode {
                 .servicos__item {
                     .servicos-link {
                         &:hover {
-                            color: #000;
+                           color: #fff;
                         }
                     }
                 }
@@ -265,7 +265,7 @@ body.dark-mode {
                 color: #000;
             }
         }
-    }
+    } */
 }
 
 /* FIM MODO DARK */

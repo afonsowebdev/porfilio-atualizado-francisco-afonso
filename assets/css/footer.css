@@ -5,14 +5,13 @@
     .footer__container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         .footer__logo {
-            a {
+            .header__logo {
                 color: var(--text-color);
                 font-size: 24px;
                 font-weight: 600;
-                margin-bottom: 20px;
 
                 .header__logo-span {
                     color: var(--primary-color);
@@ -22,145 +21,142 @@
             }
         }
 
+        /* Links */
         .footer__links {
-            .footer__nav-item {
-                .footer__nav-link {
-                    text-decoration: none;
-                    color: var(--primary-color);
-                    transition: transform 0.3s ease-out-in;
-
-                    &:hover {
+            .footer__nav-list {
+                .footer__nav-item {
+                    .footer__nav-link {
+                        text-decoration: none;
                         color: var(--text-color);
-                        transform: scale(1.02);
+                        font-size: 16px;
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
                     }
                 }
             }
         }
 
+        /* Serviços */
         .footer__servicos {
             .servicos__list {
                 .servicos__item {
                     .servicos-link {
                         text-decoration: none;
-                        color: var(--primary-color);
-                        transition: transform 0.3s ease-out-in;
-
-                        &:hover {
-                            color: var(--text-color);
-                            transform: scale(1.02);
-                        }
-                    }
-                }
-            }
-        }
-
-        .footer__contact {
-            .footer__content {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                .gmail,
-                .phone,
-                .location {
-                    color: var(--primary-color);
-                    text-decoration: none;
-                    font-size: 16px;
-                    transition: color 0.3s ease;
-
-                    &:hover {
                         color: var(--text-color);
-                    }
-
-                    i {
-                        margin-right: 4px;
-                    }
-                }
-
-                .footer__redes-socials {
-                    display: flex;
-                    margin-top: 20px;
-                    gap: 15px;
-
-                    .hero__social-link {
-                        width: 40px;
-                        height: 40px;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        text-decoration: none;
-                        color: var(--background-color);
-                        font-size: 1.2rem;
-                        border-radius: 100%;
-                        transition: background-color 0.3s ease;
+                        font-size: 16px;
 
                         &:hover {
                             color: var(--primary-color);
                         }
+                    }
+                }
+            }
 
-                        &.github {
-                            color: var(--text-color);
-                            background-color: #333;
-                        }
+            .footer__contact {
+                .footer__content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
 
-                        &.linkedin {
-                            color: var(--text-color);
-                            background-color: #0077b5;
-                        }
+                    .gmail,
+                    .phone,
+                    .location {
+                        color: var(--primary-color);
+                        text-decoration: none;
+                        font-size: 16px;
 
-                        &.instagram {
-                            color: var(--text-color);
-                            background-color: #e1306c;
+                        i {
+                            margin-right: 4px;
                         }
                     }
                 }
             }
-        }
 
-    }
+            .footer__redes-socials {
+                display: flex;
+                margin-top: 20px;
+                gap: 10px;
 
-    .footer__outros {
-        text-align: center;
-        font-size: 14px;
-        color: var(--text-color);
-        margin: 20px 0;
+                .hero__social-link {
+                    width: 40px;
+                    height: 40px;
 
-        p {
-            color: var(--text-color);
-            text-decoration: none;
-        }
-    }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-    .scroll-up {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+                    text-decoration: none;
+                    color: var(--background-color);
+                    font-size: 1.2rem;
+                    border-radius: 100%;
+                    transition: background-color 0.3s ease;
 
-        a {
-            display: flex;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            align-items: center;
-            color: var(--text-color);
-            cursor: pointer;
-            transition: transform 0.6s ease-in-out;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
 
-            &:hover {
-                transform: scale(1.4);
-                box-shadow: 0 2px 8px var(--tertiary-color);
+                    &.github {
+                        color: var(--text-color);
+                        background-color: #333;
+                    }
+
+                    &.linkedin {
+                        color: var(--text-color);
+                        background-color: #0077b5;
+                    }
+
+                    &.instagram {
+                        color: var(--text-color);
+                        background-color: #e1306c;
+                    }
+                }
+
             }
 
-            .bx.bxs-chevron-up {
-                font-size: 1.8rem;
+            .footer__outros {
+                text-align: center;
+                font-size: 14px;
                 color: var(--text-color);
-            }
-        }
+                margin: 20px 0;
 
-        &:active {
-            transform: scale(0.9);
+                p {
+                    color: var(--text-color);
+                    text-decoration: none;
+                }
+            }
+
+            .scroll-up {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    align-items: center;
+                    color: var(--text-color);
+                    cursor: pointer;
+                    transition: transform 0.6s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.4);
+                        box-shadow: 0 2px 8px var(--tertiary-color);
+                    }
+
+                    .bx.bxs-chevron-up {
+                        font-size: 1.8rem;
+                        color: var(--text-color);
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
         }
     }
 }
