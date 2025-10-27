@@ -207,65 +207,71 @@ body.dark-mode {
             }
         }
     }
-}
 
-.footer {
-    /* footer__container {
+    .footer {
+        background-color: none;
 
-        .footer__logo {
-            .header__logo-link {
-                color: #000;
-            }
-        }
+        .footer__container {
+            .footer__logo {
+                .header__logo {
+                    color: var(--dark-text-color);
 
-
-        .footer__links {
-
-            .footer__nav-item {
-
-                &:hover {
-                    color: #000;
+                    .header__logo-span {
+                        color: var(--primary-color);
+                    }
                 }
             }
-        }
 
-        .footer__servicos {
-            .servicos__list {
-                .servicos__item {
-                    .servicos-link {
-                        &:hover {
-                           color: #fff;
+            .footer__links,
+            .footer__servicos,
+            .footer__contact,
+            .footer__redes-socials {
+                .footer__nav-list {
+                    .footer__nav-item {
+                        .footer__nav-link {
+                            color: var(--primary-color);
+
+                            &:hover {
+                                color: var(--dark-text-color);
+                            }
                         }
                     }
                 }
+
+                i {
+
+                    &.github,
+                    &.linkedin,
+                    &.instagram {
+                        color: var(--text-color);
+                    }
+                }
             }
         }
 
-        .footer__contact {
-            .footer__content {
+        .footer__outros {
+            p.footer__copy {
+                color: var(--dark-text-color);
+            }
+        }
 
-                .gmail,
-                .phone,
-                .location {
-                    &:hover {
-                        color: #000;
-                    }
+        .scroll-up {
+            .scroll-up__link {
+                .bx.bxs-chevron-up {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    background-color: var(--primary-color);
+                    padding: 6px;
+                    border-radius: 50%;
+                    color: var(--text-color);
                 }
             }
         }
     }
-
-    .footer__outros {
-        color: #000;
-
-        a {
-            color: var(--primary-color);
-
-            &:hover {
-                color: #000;
-            }
-        }
-    } */
 }
+
 
 /* FIM MODO DARK */
