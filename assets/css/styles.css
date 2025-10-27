@@ -15,6 +15,11 @@ body {
                 justify-content: center;
                 align-items: flex-start;
 
+                .hero__description-inicial {
+                    font-size: 1.2rem;
+                    color: var(--text-color);
+                }
+
                 .hero__title {
                     font-size: 3.8rem;
                     font-weight: bold;
@@ -68,7 +73,7 @@ body {
 
                 .hero__socials {
                     display: flex;
-                    gap: 15px;
+                    gap: 10px;
                     margin-top: 20px;
 
                     .hero__social-link {
