@@ -54,7 +54,7 @@ body.dark-mode {
 
     .hero {
         .hero__container {
-
+            .hero__description-inicial,
             .hero__title,
             .hero__subtitle,
             .hero__description {
