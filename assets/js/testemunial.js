@@ -12,12 +12,12 @@ function showTestimonial(index) {
 }
 
 // Avança automaticamente a cada 5 segundos (5000ms)
-function startAutoSlide() {
+/* function startAutoSlide() {
   autoInterval = setInterval(() => {
     current = (current + 1) % testimonials.length;
     showTestimonial(current);
   }, 6000);
-}
+} */
 
 // Para o slide automático (caso queira reiniciar ao clicar)
 function resetAutoSlide() {
